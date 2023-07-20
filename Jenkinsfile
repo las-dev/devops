@@ -33,7 +33,7 @@ pipeline {
             }
   stage('SonarQube analysis') {
             steps {
-                        sh 'mvn  sonar:sonar -Dsonar.login=admin -Dsonar.password=admin123@v -Dsonar.projectKey=DevOps'
+                        sh 'mvn  sonar:sonar -Dsonar.login=admin -Dsonar.password=admin123 -Dsonar.projectKey=DevOps'
                   }
             }
 stage('Build') {
