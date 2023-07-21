@@ -21,11 +21,4 @@ services:
       - 3306:3306
     volumes:
       - ./data:/var/lib/mysql
-  FRONTEND:
-    image: ghaith19/frontendapp
-    volumes:
-      - ./app:/app
-    ports:
-      - 80:80
-    depends_on:
-      - BACKEND
+  
