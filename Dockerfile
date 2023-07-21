@@ -1,4 +1,4 @@
-FROM openjdk:8 
+FROM maven:3.8.4-openjdk-11-slim 
 
 WORKDIR /
 
