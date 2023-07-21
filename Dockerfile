@@ -18,7 +18,7 @@ WORKDIR /
 
 COPY  ./target/ExamThourayaS2-1.0.jar .
 
-EXPOSE 8089
+EXPOSE 8083
 
 # Run the Spring Boot application
 CMD ["java", "-jar", "ExamThourayaS2-1.0.jar" ]
