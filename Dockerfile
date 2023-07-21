@@ -1,4 +1,4 @@
-FROM maven:3.8.4-openjdk-11-slim AS build
+FROM openjdk:8 AS build
 
 WORKDIR /
 
@@ -16,9 +16,9 @@ FROM openjdk:11-jre-slim
 
 WORKDIR /
 
-COPY --from=build ./target/ExamThourayaS2-0.0.1-SNAPSHOT.jar .
+COPY --from=build ./target/ExamThourayaS2-1.0.jar .
 
 EXPOSE 8089
 
 # Run the Spring Boot application
-CMD ["java", "-jar", "ExamThourayaS2-0.0.1-SNAPSHOT.jar" ]
+CMD ["java", "-jar", "ExamThourayaS2-1.0.jar" ]
