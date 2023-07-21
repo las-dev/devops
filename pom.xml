@@ -45,7 +45,7 @@
 
         <name>deploymentRepo</name>
 
-        <url>http://192.168.0.47:8081/repository/maven-releases/</url>
+        <url>http://193.95.105.45:8081/repository/maven-releases/</url>
 
     </repository>
 
@@ -55,7 +55,7 @@
 
             <name>Snapshots</name>
 
-            <url>http://192.168.0.47:8081/repository/maven-releases/</url>
+            <url>http://193.95.105.45:8081/repository/maven-releases/</url>
 
         </snapshotRepository>
 
